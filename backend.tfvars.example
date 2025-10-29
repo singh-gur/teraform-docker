@@ -1,5 +1,4 @@
-endpoints = { s3 = "http://s3.gsingh.io" }
-# endpoint                    = "https://s3.gsingh.io"
+endpoints                   = { s3 = "https://s3.gsingh.io" }
 bucket                      = "terraform-state"
 access_key                  = "access-key"
 secret_key                  = "secret-key"

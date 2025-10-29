@@ -11,31 +11,6 @@ terraform {
   }
 }
 
-
-variable "minio_endpoint" {
-  description = "MinIO S3 endpoint URL"
-  type        = string
-  default     = "https://s3.gsingh.io"
-}
-
-variable "minio_bucket" {
-  description = "MinIO bucket name for Terraform state"
-  type        = string
-  default     = "terraform-state"
-}
-
-variable "minio_access_key" {
-  description = "MinIO access key"
-  type        = string
-  sensitive   = true
-}
-
-variable "minio_secret_key" {
-  description = "MinIO secret key"
-  type        = string
-  sensitive   = true
-}
-
 provider "docker" {}
 
 resource "docker_image" "nginx" {
